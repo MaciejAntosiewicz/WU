@@ -1,0 +1,135 @@
+body {
+	
+}
+
+#title {
+	font-family: 'julius';
+	font-size: 38px;
+	letter-spacing: 6px;
+}
+
+#title a {
+	text-decoration:none;
+	color:#333333;
+}
+
+#www{
+	font-family: 'gruppo';
+  	font-size: 16px;
+  	letter-spacing: 10px;
+
+  	height:30px;
+}
+
+
+#main-jumbotron {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 30px;
+
+  height: 650px;
+  margin-bottom: 15px;
+}
+
+#content {
+	height: 520px;
+	overflow-y:scroll;
+  	overflow-x:hidden;
+}
+
+.img-custom{
+	min-height:80px;
+	min-width:80px;
+
+	margin-bottom:30px;
+}
+
+
+#menu {
+   
+}
+
+.btn-nav { 
+  color: #000000; 
+  background-color: #EEEEEE; 
+  border-color: #EEEEEE; 
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+  font-family: 'gruppo';
+  font-size: 14px;
+} 
+ 
+.btn-nav:hover, 
+.btn-nav:focus, 
+.btn-nav:active, 
+.btn-nav.active, 
+.open .dropdown-toggle.btn-nav { 
+  color: #000000; 
+  background-color: #fff; 
+  border-color: #EEEEEE; 
+} 
+ 
+.btn-nav:active, 
+.btn-nav.active, 
+.open .dropdown-toggle.btn-nav { 
+  background-image: none; 
+  background-color: #fff; 
+  border-color: #EEEEEE; 
+  box-shadow:none;
+} 
+ 
+.btn-nav.disabled, .btn-nav[disabled], fieldset[disabled] .btn-nav, .btn-nav.disabled:hover, .btn-nav[disabled]:hover, 
+fieldset[disabled] .btn-nav:hover, .btn-nav.disabled:focus, .btn-nav[disabled]:focus, fieldset[disabled] .btn-nav:focus, 
+.btn-nav.disabled:active, .btn-nav[disabled]:active, 
+fieldset[disabled] .btn-nav:active, 
+.btn-nav.disabled.active, 
+.btn-nav[disabled].active, 
+fieldset[disabled] .btn-nav.active { 
+  background-color: #EEEEEE; 
+  border-color: #EEEEEE; 
+} 
+ 
+.btn-nav .badge { 
+  color: #EEEEEE; 
+  background-color: #000000; 
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+#contact_email{
+  font-family: 'gruppo';
+
+  font-size: 20px;
+  letter-spacing: 5px;
+
+  margin-top: 100px;
+}
+
+#contact_email a {
+	text-decoration:none;
+	color:#333333;
+}
+
+#contact_phone{
+  font-family: 'gruppo';
+  font-size: 16px;
+  letter-spacing: 10px;	
+
+  margin-top: 100px;
+}
+
+#contact_social{
+  margin-top: 100px;
+}
+
+.contact_fa a {
+	text-decoration:none;
+	color:#333333;
+}

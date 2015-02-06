@@ -1,0 +1,15 @@
+
+<% @videos.each_slice(2).each do |group| %>
+  <div class="row">
+    <div class="col-md-12">
+      <% group.each do |video| %>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+          <%= link_to video.video_url, class: "various fancybox.iframe", rel: "gallery", title:video.description do %>
+            <%= image_tag video.photo.url(:thumb), class: "img-responsive img-thumbnail img-custom" %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+ </div>
+<% end %>
+ 

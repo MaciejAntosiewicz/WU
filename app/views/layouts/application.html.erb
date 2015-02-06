@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wiola Uliasz</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="row" style="height:50px;"></div>
+  <div class="container">
+  	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+	  <div id="main-jumbotron" class="jumbotron vertical-center">
+		  <div id="content">
+		    <%= yield %>
+		  </div>
+		  <div id="title" class="text-center">
+		  	<%= link_to 'WIOLA ULIASZ', page_path('index') %>
+		  </div>
+		  <div id="menu" class="text-center">	   
+		    <%= link_to 'styling', stylings_path, class: is_active?(stylings_path) %>
+		    <%= link_to 'sketches', sketches_path, class: is_active?(sketches_path) %>
+		    <%= link_to 'projects', projects_path, class: is_active?(projects_path) %>
+		    <%= link_to 'video', videos_path, class: is_active?(videos_path) %>
+		    <%= link_to 'contact', page_path('contact'), class: is_active?(page_path('contact')) %>
+	      </div>
+   	  </div>
+   	  <div id="www" class="text-center lead" >
+		www.wiolauliasz.com
+	  </div>
+	</div>
+  </div>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</body>
+</html>

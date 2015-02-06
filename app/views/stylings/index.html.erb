@@ -1,0 +1,19 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<% @stylings.each_slice(4).each do |group| %>
+  <div class="row">
+    <div class="col-md-12">
+      <% group.each do |image| %>
+        <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+          <%= link_to image.photo.url, class: "fancybox", rel: "gallery", title:image.description do %>
+            <%= image_tag image.photo.url(:thumb), class: "img-responsive img-thumbnail img-custom" %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+ </div>
+<% end %>
+ 
+
+
+
