@@ -45,6 +45,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'rails_12factor'
+
 # Paperclip gem for managing file uploads
 gem "paperclip", "~> 4.2"
 
