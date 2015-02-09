@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
   <div class="row" style="height:50px;"></div>
@@ -26,7 +27,7 @@
 	      </div>
    	  </div>
    	  <div id="www" class="text-center lead" >
-		www.wiolauliasz.com
+   	  	<%= link_to 'www.wiolauliasz.com', 'http://www.wiolauliasz.com' %>
 	  </div>
 	</div>
   </div>
