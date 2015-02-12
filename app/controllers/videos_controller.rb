@@ -1,7 +1,7 @@
 class VideosController < InheritedResources::Base
 
   def index
-    @videos = Video.all
+    @videos = Video.order('created_at DESC').all
   end
 
 end

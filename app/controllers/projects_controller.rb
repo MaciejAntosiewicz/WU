@@ -1,7 +1,7 @@
 class ProjectsController < InheritedResources::Base
   
   def index
-    @projects = Project.all
+    @projects = Project.order('created_at DESC').all
   end
 end
 

@@ -1,7 +1,7 @@
 class SketchesController < InheritedResources::Base
 
   def index
-    @sketches = Sketche.all
+    @sketches = Sketche.order('created_at DESC').all
   end
 
 end

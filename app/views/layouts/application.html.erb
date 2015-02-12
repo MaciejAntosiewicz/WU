@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wiola Uliasz</title>
+  <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
   <%= csrf_meta_tags %>
@@ -16,14 +16,14 @@
 		    <%= yield %>
 		  </div>
 		  <div id="title" class="text-center">
-		  	<%= link_to 'WIOLA ULIASZ', page_path('index') %>
+		  	<%= link_to 'WIOLA ULIASZ', static_path(id: 'index') %>
 		  </div>
 		  <div id="menu" class="text-center">	   
 		    <%= link_to 'styling', stylings_path, class: is_active?(stylings_path) %>
 		    <%= link_to 'sketches', sketches_path, class: is_active?(sketches_path) %>
 		    <%= link_to 'projects', projects_path, class: is_active?(projects_path) %>
 		    <%= link_to 'video', videos_path, class: is_active?(videos_path) %>
-		    <%= link_to 'contact', page_path('contact'), class: is_active?(page_path('contact')) %>
+		    <%= link_to 'contact', static_path(id: 'contact'), class: is_active?(static_path(id: 'contact')) %>
 	      </div>
    	  </div>
    	  <div id="www" class="text-center lead" >

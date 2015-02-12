@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
 
   resources :videos
-
   resources :projects
+  resources :stylings
+  resources :sketches
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # root to: "home#index"
   
-  resources :stylings
-  resources :sketches
-  resources :projects
+  match '/:id' => 'high_voltage/pages#show', :as => :static, :via => :get
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
